@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark" style="height: 100%;">
+<head>
+    <script>
+        let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+        console.log(isSafari);
+        if (isSafari) {
+            window.location = "https://google.com/chrome";
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover,minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SUPER BOTS - Dashboard</title>
+
+    <meta property="og:title" content="SUPER BOTS">
+    <meta property="og:description" content="A melhor Inteligência Artificial do Brasil!">
+    <meta property="og:url" content="https://superbots.com.br">
+    <meta property="og:image" content="https://superbots.com.br/image/logo1710306694.svg">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="https://superbots.com.br/image/favicon1715916901.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.plataformaautobots.com.br/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.plataformaautobots.com.br/css/all.css">
+    <link rel="stylesheet" href="https://cdn.plataformaautobots.com.br/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="style.css">
+
+ 
+</head>
+
+<body style="position: relative; min-height: 100%; top: 0px;">
+    <div class="barspinner" style="display: none;">
+        <div class="loader spinner-border"></div>
+    </div>
+
+
+    <div class="position-absolute top-0 start-0 end-0 bottom-0 d-flex flex-column navbar-expand-md vw-100 overflow-hidden">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top border-bottom border-light">
+            <div class="container">
+                <a class="navbar-brand" href="https://superbots.com.br"><img src="https://superbots.com.br/image/logoh1715917008.png" height="32" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="https://superbots.com.br"><img src="https://superbots.com.br/image/logoh1715917008.png" height="32" alt="Logo"></a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown has-megamenu">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Menu </a>
+                                <div class="dropdown-menu megamenu rounded-0" role="menu">
+                                    <div class="container">
+                                        <div class="row g-3">
+                                            <div class="col-lg-3 col-12">
+                                                <div class="col-megamenu">
+                                                    <h6 class="title text-warning">Forex</h6>
+                                                    <nav class="nav flex-column nav-pills mb-3">
+                                                        <a href="https://superbots.com.br/fxbot" class="nav-item text-start btn btn-outline-light border-0 d-flex gap-3"><i class="fad fa-robot my-auto"></i> Bots</a>
+                                                    </nav>
+                                                    <h6 class="title text-warning">Binarios (OTC)</h6>
+                                                    <nav class="nav flex-column nav-pills mb-3">
+                                                        <a href="https://superbots.com.br/trader" class="nav-item text-start btn btn-outline-light border-0 d-flex gap-3"><i class="fad fa-chart-area my-auto"></i> Operação Manual</a>
+                                                        <a href="https://superbots.com.br/bot" class="nav-item text-start btn btn-outline-light border-0 d-flex gap-3"><i class="fad fa-robot my-auto"></i> Bots</a>
+                                                        <a href="https://superbots.com.br/copytrader" class="nav-item text-start btn btn-outline-light border-0 d-flex gap-3"><i class="fad fa-user-chart my-auto"></i> Copy Trader</a>
+                                                        <a href="https://superbots.com.br/sinais" class="bnav-item text-start btn btn-outline-light border-0 d-flex gap-3"><i class="fad fa-chart-line my-auto"></i>Sala de sinais</a>
+                                                    </nav>
+                                                </div> 
+                                            </div>
+                                            <div class="col-lg-3 col-12">
+                                                <div class="col-megamenu">
+                                                    <h6 class="title text-warning">Produtividade</h6>
+                                                    <nav class="nav flex-column nav-pills mb-3">
+                                                        <a href="https://superbots.com.br/gerenciadorbanca" class="nav-item text-start btn btn-outline-light border-0 d-flex gap-3"><i class="fad fa-calculator-alt my-auto"></i>Gestor de banca</a>
+                                                        <a href="https://superbots.com.br/links" class="nav-item text-start btn btn-outline-light border-0 d-flex gap-3"><i class="fad fa-link my-auto"></i>Links Úteis</a>
+                                                        <a href="https://superbots.com.br/downloads" class="nav-item text-start btn btn-outline-light border-0 d-flex gap-3"><i class="fad fa-cloud-download my-auto"></i>Arquivos</a>
+                                                        <a href="https://superbots.com.br/moedas" class="nav-item text-start btn btn-outline-light border-0 d-flex gap-3"><i class="fad fa-search-dollar my-auto"></i>Cotações</a>
+                                                    </nav>
+                                                </div> 
+                                            </div>
+                                            <div class="col-lg-3 col-12">
+                                                <div class="col-megamenu">
+                                                    <h6 class="title text-warning">Crescimento pessoal</h6>
+                                                    <nav class="nav flex-column nav-pills mb-3">
+                                                        <a href="https://superbots.com.br/marketplace" class="nav-item text-start btn btn-outline-light border-0 d-flex gap-3"><i class="fad fa-store my-auto"></i>Marketplace</a>
+                                                        <a href="https://superbots.com.br/cursos" class="nav-item text-start btn btn-outline-light border-0 d-flex gap-3"><i class="fad fa-books my-auto"></i>Cursos</a>
+                                                        <a class="nav-item text-start btn btn-outline-light border-0 d-flex gap-3" href="https://superbots.com.br/vip"><i class="fad fa-star my-auto"></i>Area Vip</a>
+                                                        <a href="https://superbots.com.br/galeria" class="nav-item text-start btn btn-outline-light border-0 d-flex gap-3"><i class="fad fa-play my-auto"></i>Videos</a>
+                                                    </nav>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Corporação </a>
+                                <div class="dropdown-menu p-3" role="menu">
+                                    <h6 class="title text-warning">Sobre</h6>
+                                    <nav class="nav flex-column nav-pills">
+                                        <a href="https://superbots.com.br/sobre" class="nav-item text-start btn btn-outline-light border-0 text-nowrap"><i class="fad fa-copyright my-auto me-2"></i>Quem Somos</a>
+                                        <a href="https://superbots.com.br/termo" class="nav-item text-start btn btn-outline-light border-0 text-nowrap"><i class="fad fa-file-contract my-auto me-2"></i>Termo e Condições</a>
+                                    </nav>
+                                </div> 
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link d-flex justify-content-between disabled gap-2">Onlines<b style="color:#0f0!important" id="onlines">335</b></a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  </a>
+                                <div class="dropdown-menu  rounded-0" role="menu">
+                                    <div class="container">
+                                        <div class="row g-3">
+                                            <div class="col-12">
+                                                <div class="col-megamenu">
+                                                    <h6 class="title text-warning">
+                                                        <hr>
+                                                    </h6>
+                                                    <nav class="nav flex-column nav-pills mb-3">
+                                                        <a href="https://superbots.com.br/dashboard/perfil" class="nav-item text-nowrap text-start btn btn-outline-light border-0 d-flex gap-3"><i class="fad fa-user my-auto"></i>Perfil</a>
+                                                        <a href="https://superbots.com.br/logoff" class="nav-item text-start text-nowrap btn btn-outline-danger border-0 d-flex gap-3"><i class="fad fa-sign-out my-auto"></i> Sair</a>
+                                                    </nav>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column flex-grow-1 overflow-hidden">
+            <div class="w-100 mainh flex-grow-1 position-relative">
+                <div class="position-absolute top-0 start-0 end-0 bottom-0 overflow-overlay d-flex flex-column overflow-y">
+                    <style>
+    .btn-custom {
+        position: relative;
+        color: var(--color1);
+        background-color: var(--color4);
+        background: linear-gradient(135deg, var(--color4) 45%, var(--color1) 50%, var(--color4) 55%);
+        background-size: 400% 400%;
+        border-color: var(--color4)aa;
+        animation: AnimationName 4s ease infinite;
+    }
+
+    .btn-custom:hover {
+        color: var(--color1);
+        background: var(--color2);
+        background-color: var(--color2);
+        border-color: var(--color2)aa;
+    }
+
+    .btn-custom:focus,
+    .btn-custom.focus {
+        background: var(--color2);
+        background-color: var(--color2);
+        color: var(--color1);
+        box-shadow: 0 0 0 .2rem var(--color2)aa;
+    }
+
+    .btn-outline-custom {
+        color: var(--color4);
+        background-color: transparent;
+        background-image: none;
+        border-color: var(--color4)
+    }
+
+    .btn-outline-custom:hover {
+        color: var(--color1);
+        background-color: var(--color4);
+        border-color: var(--color4)aa;
+    }
+
+    @keyframes AnimationName {
+        0% {
+            background-position: 0% 31%
+        }
+
+        50% {
+            background-position: 100% 70%
+        }
+
+        100% {
+            background-position: 0% 31%
+        }
+    }
+
+    .col-md-6:hover .selbot,
+    .selbot:focus {
+        /*opacity: .8;*/
+        transform: scale(1.1) rotateY(-180deg);
+        z-index: 100;
+        transition: all 1s;
+    }
+
+    .dropdown-item.selbot:focus,
+    .dropdown-item.selbot:hover {
+        transform: scale(1.1);
+        /* rotateX(-360deg);*/
+        z-index: 100;
+        transition: all 1s
+    }
+
+    .selbot .card-body {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: var(--color4);
+        opacity: 0;
+        z-index: -1;
+    }
+
+    .selbot .card-body .botname {
+        font-size: 14pt;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .col-md-6:hover .selbot .card-body,
+    .selbot:focus .card-body {
+        /*opacity: .8;*/
+        transform: rotateY(-180deg);
+
+        opacity: 1;
+        z-index: 101;
+        transition: all 1s, opacity 1.2s;
+    }
+
+    .dropdown-item.selbot {
+        word-break: break-word;
+        white-space: normal;
+    }
+
+    .fullpage {
+        height: 100% !important;
+        width: 100% !important;
+    }
+
+    .nav-pills .nav-link:not(.active) {
+        color: var(--color1) !important;
+    }
+
+    .nav-pills .nav-link.active {
+        background-color: #33333388;
+    }
+
+    .fade:not(.show) {
+        display: none;
+    }
+
+    .abareload:hover {
+        transition-duration: 0.3s;
+        transform: rotate(270deg);
+        filter: hue-rotate(180deg)
+    }
+</style>
+<div class="container-fluid d-flex flex-column px-0 mainaba h-100">
+    <embed class="h-100 tab-pane fade show active" id="aba1" src="https://superbots.com.br/ababot" frameborder="0" role="tabpanel" aria-labelledby="aba1-tab">
+    <ul class="nav nav-pills pt-1 px-1 mt-auto" id="myTab" style="background-color: var(--color6);" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link px-2 py-0" href="javascript:void(0)" onclick="if($('nav.navbar').hasClass('d-none')){$('nav.navbar').removeClass('d-none');$('.mainaba').removeClass('fullpage')}else{$('nav.navbar').addClass('d-none');$('.toolbar').removeClass('show');$('.mainaba').addClass('fullpage')}" aria-selected="false" tabindex="-1" role="tab">
+                <i class="fad fa-expand"></i>
+            </a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link px-2 py-0 active" data-bot="" id="aba1-tab" data-abaid="1" data-bs-toggle="tab" href="#aba1" aria-selected="true" role="tab">Aba 1 <i class="fas fa-sync-alt ml-2 text-info abareload"></i> <i class="fas fa-times ml-2 text-danger close"></i></a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link px-2 py-0" id="add-tab" href="javascript:void(0)" aria-selected="false" tabindex="-1" role="tab"><i class="fas fa-plus"></i></a>
+        </li>
+        <li class="nav-item ms-auto ms-auto autobot" data-bs-toggle="tooltip" data-bs-original-title="Auto Bot" role="presentation">
+            <a class="nav-link px-2 py-0" target="_Blank" href="http://plataformaautobot.com.br/wpb/U1VQRVIgQk9UUw==" aria-selected="false" tabindex="-1" role="tab">
+                <i class="fad fa-robot"></i> Auto Bot
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="modal fade" id="saldacao" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">SUPER BOTS</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
